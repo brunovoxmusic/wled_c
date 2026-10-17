@@ -1,0 +1,6 @@
+{
+  "name": "WLED QUEENS Pub Stage Engine",
+  "description": "Kompletná WLED 0.15.x klubová konfigurácia a riadiaca konzola pre QUEENS pub Púchov (6 trubíc + 24x18 matrix).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
