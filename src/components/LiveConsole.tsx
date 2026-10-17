@@ -436,8 +436,8 @@ export const LiveConsole: React.FC<LiveConsoleProps> = ({
           </span>
         </div>
 
-        {/* Big Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+        {/* Big Grid - 3 columns on mobile, 4-5 on larger screens */}
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 sm:gap-3">
           {WLED_PRESETS.map((preset, idx) => {
             const isSelected = currentPreset.id === preset.id;
             const controlKey = `preset_${preset.id}`;
@@ -448,7 +448,7 @@ export const LiveConsole: React.FC<LiveConsoleProps> = ({
               <div
                 key={preset.id}
                 onClick={() => onSelectPreset(preset)}
-                className={`p-3.5 rounded-xl border-2 text-left transition-all cursor-pointer relative flex flex-col justify-between h-32 select-none group ${
+                className={`p-2.5 sm:p-3.5 rounded-xl border-2 text-left transition-all cursor-pointer relative flex flex-col justify-between h-28 sm:h-32 select-none group ${
                   isSelected
                     ? 'bg-red-600/15 border-red-500 text-white shadow-xl shadow-red-950/60 scale-[1.02]'
                     : 'bg-slate-900 border-slate-800 text-slate-300 hover:border-slate-600 hover:bg-slate-800/80'
